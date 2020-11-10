@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		1C3CDD8A255B14D100754033 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		1C3CDD8C255B14E100754033 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
-		1CB59DE5255B2CDF00ED3872 /* MobvenExtensions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MobvenExtensions; path = ../MobvenExtensions; sourceTree = "<group>"; };
+		1CB59DE5255B2CDF00ED3872 /* MobvenExtensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MobvenExtensions; sourceTree = "<group>"; };
 		34003D0A51CC164C61158A7B /* Pods-MobvenIOSTI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobvenIOSTI.release.xcconfig"; path = "Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI.release.xcconfig"; sourceTree = "<group>"; };
 		6581F0E62508CB55008CBAFA /* MobvenIOSTI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobvenIOSTI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6581F0E92508CB55008CBAFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				65811167250A6E42008CBAFA /* Config */,
-				6581F12725091624008CBAFA /* Extensions */,
 				6581F0FE2508CB69008CBAFA /* API */,
 				6581F0FD2508CB63008CBAFA /* Scenes */,
 				6581F0E92508CB55008CBAFA /* AppDelegate.swift */,
@@ -184,13 +183,6 @@
 				6581F1212509107B008CBAFA /* GistTableViewCell.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		6581F12725091624008CBAFA /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F5A7F66F644A9E9CBDB7C898 /* Pods */ = {

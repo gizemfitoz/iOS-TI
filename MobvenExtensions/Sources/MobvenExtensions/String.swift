@@ -8,9 +8,8 @@
 
 import Foundation
 
-public extension String {
-    
-    func formatDate(with format: String?) -> String? {
+extension String {
+    public func formatDate(with format: String?) -> String? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
         guard let date = dateFormatter.date(from: self) else { return nil }
@@ -18,5 +17,4 @@ public extension String {
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: date)
     }
-    
 }

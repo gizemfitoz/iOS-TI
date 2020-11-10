@@ -14,16 +14,17 @@ private let swizzling: (AnyClass, Selector, Selector) -> () = { forClass, origin
     method_exchangeImplementations(originalMethod!, swizzledMethod!)
 }
 
-public extension UIViewController {
-
-    static let classInitForVersion: Void = {
-        let originalSelector = #selector(viewDidAppear(_:))
-        let swizzledSelector = #selector(swizzledViewDidAppear(_:))
-        swizzling(UIViewController.self, originalSelector, swizzledSelector)
-    }()
-
+extension UIViewController {
+    public static var versionDelegate: (() -> ())? {
+        didSet {
+            let originalSelector = #selector(viewDidAppear(_:))
+            let swizzledSelector = #selector(swizzledViewDidAppear(_:))
+            swizzling(UIViewController.self, originalSelector, swizzledSelector)
+        }
+    }
+    
     @objc func swizzledViewDidAppear(_ animated: Bool) {
-        VersionConfig.shared?.show()
+        Self.versionDelegate?()
         swizzledViewDidAppear(animated)
     }
 
