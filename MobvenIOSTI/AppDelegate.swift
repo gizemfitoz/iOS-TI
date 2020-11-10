@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MobvenExtensions
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let showVersion = Bundle.main.infoDictionary?["ShowVersion"] as? String ?? "NO"
         if showVersion == "YES" {
-            UIViewController.classInitForVersion
+            UIViewController.versionDelegate = { VersionConfig.shared?.show() }
         }
         
         return true

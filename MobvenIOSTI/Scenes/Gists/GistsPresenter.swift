@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import MobvenExtensions
 
 protocol GistsPresentationLogic: class {
     func presentGists(response: Gists.Fetch.Response)

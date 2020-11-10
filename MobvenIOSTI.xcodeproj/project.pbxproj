@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1C3CDD8B255B14D100754033 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1C3CDD8A255B14D100754033 /* Development.xcconfig */; };
 		1C3CDD8D255B14E800754033 /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1C3CDD8C255B14E100754033 /* Production.xcconfig */; };
-		1CB59DE4255B262500ED3872 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB59DE3255B262500ED3872 /* UIViewController.swift */; };
+		1CB59DE7255B2D2400ED3872 /* MobvenExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 1CB59DE6255B2D2400ED3872 /* MobvenExtensions */; };
 		4E714CC07D95BE01E4359C1A /* Pods_MobvenIOSTI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974032092EDA067EDC20773C /* Pods_MobvenIOSTI.framework */; };
 		6581F0EA2508CB55008CBAFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F0E92508CB55008CBAFA /* AppDelegate.swift */; };
 		6581F0F32508CB5A008CBAFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6581F0F22508CB5A008CBAFA /* Assets.xcassets */; };
@@ -32,14 +32,12 @@
 		6581F124250913B9008CBAFA /* VersionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F123250913B9008CBAFA /* VersionConfig.swift */; };
 		6581F12625091422008CBAFA /* Gist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F12525091422008CBAFA /* Gist.swift */; };
 		6581F130250A0E4B008CBAFA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F12F250A0E4B008CBAFA /* API.swift */; };
-		6DA088AC2517E905003C9A20 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA088AB2517E905003C9A20 /* UIApplication.swift */; };
-		6DA088B92517FD6A003C9A20 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA088B82517FD6A003C9A20 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C3CDD8A255B14D100754033 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		1C3CDD8C255B14E100754033 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
-		1CB59DE3255B262500ED3872 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		1CB59DE5255B2CDF00ED3872 /* MobvenExtensions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MobvenExtensions; path = ../MobvenExtensions; sourceTree = "<group>"; };
 		34003D0A51CC164C61158A7B /* Pods-MobvenIOSTI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobvenIOSTI.release.xcconfig"; path = "Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI.release.xcconfig"; sourceTree = "<group>"; };
 		6581F0E62508CB55008CBAFA /* MobvenIOSTI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobvenIOSTI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6581F0E92508CB55008CBAFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,8 +62,6 @@
 		6581F123250913B9008CBAFA /* VersionConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionConfig.swift; sourceTree = "<group>"; };
 		6581F12525091422008CBAFA /* Gist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gist.swift; sourceTree = "<group>"; };
 		6581F12F250A0E4B008CBAFA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		6DA088AB2517E905003C9A20 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
-		6DA088B82517FD6A003C9A20 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		78D793100DC6BA0E0C425C11 /* Pods-MobvenIOSTI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobvenIOSTI.debug.xcconfig"; path = "Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI.debug.xcconfig"; sourceTree = "<group>"; };
 		974032092EDA067EDC20773C /* Pods_MobvenIOSTI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobvenIOSTI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E714CC07D95BE01E4359C1A /* Pods_MobvenIOSTI.framework in Frameworks */,
+				1CB59DE7255B2D2400ED3872 /* MobvenExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +100,7 @@
 		6581F0DD2508CB55008CBAFA = {
 			isa = PBXGroup;
 			children = (
+				1CB59DE5255B2CDF00ED3872 /* MobvenExtensions */,
 				6581F0E82508CB55008CBAFA /* MobvenIOSTI */,
 				6581F0E72508CB55008CBAFA /* Products */,
 				F5A7F66F644A9E9CBDB7C898 /* Pods */,
@@ -191,9 +189,6 @@
 		6581F12725091624008CBAFA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				6DA088AB2517E905003C9A20 /* UIApplication.swift */,
-				6DA088B82517FD6A003C9A20 /* String.swift */,
-				1CB59DE3255B262500ED3872 /* UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -225,6 +220,9 @@
 			dependencies = (
 			);
 			name = MobvenIOSTI;
+			packageProductDependencies = (
+				1CB59DE6255B2D2400ED3872 /* MobvenExtensions */,
+			);
 			productName = versionApp;
 			productReference = 6581F0E62508CB55008CBAFA /* MobvenIOSTI.app */;
 			productType = "com.apple.product-type.application";
@@ -325,7 +323,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DA088B92517FD6A003C9A20 /* String.swift in Sources */,
 				6581F10D2508CBBB008CBAFA /* GistsWorker.swift in Sources */,
 				6581F10E2508CBBB008CBAFA /* GistsRouter.swift in Sources */,
 				6581F130250A0E4B008CBAFA /* API.swift in Sources */,
@@ -334,12 +331,10 @@
 				6581F124250913B9008CBAFA /* VersionConfig.swift in Sources */,
 				6581F1182508CBDA008CBAFA /* GistDetailPresenter.swift in Sources */,
 				6581F1092508CBBB008CBAFA /* GistsViewController.swift in Sources */,
-				6DA088AC2517E905003C9A20 /* UIApplication.swift in Sources */,
 				6581F1222509107B008CBAFA /* GistTableViewCell.swift in Sources */,
 				6581F1172508CBDA008CBAFA /* GistDetailViewController.swift in Sources */,
 				6581F10C2508CBBB008CBAFA /* GistsModels.swift in Sources */,
 				6581F0EA2508CB55008CBAFA /* AppDelegate.swift in Sources */,
-				1CB59DE4255B262500ED3872 /* UIViewController.swift in Sources */,
 				6581F10B2508CBBB008CBAFA /* GistsInteractor.swift in Sources */,
 				6581F12625091422008CBAFA /* Gist.swift in Sources */,
 				6581F11C2508CBDA008CBAFA /* GistDetailRouter.swift in Sources */,
@@ -544,6 +539,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1CB59DE6255B2D2400ED3872 /* MobvenExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MobvenExtensions;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6581F0DE2508CB55008CBAFA /* Project object */;
 }

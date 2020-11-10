@@ -14,7 +14,7 @@ private let swizzling: (AnyClass, Selector, Selector) -> () = { forClass, origin
     method_exchangeImplementations(originalMethod!, swizzledMethod!)
 }
 
-extension UIViewController {
+public extension UIViewController {
 
     static let classInitForVersion: Void = {
         let originalSelector = #selector(viewDidAppear(_:))

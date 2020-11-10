@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import MobvenExtensions
 
 protocol GistDetailPresentationLogic: class {
     func presentGistDetail(response: GistDetail.FetchDetail.Response)
